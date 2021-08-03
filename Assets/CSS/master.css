@@ -84,7 +84,7 @@ section {
       background: white;
     }
       .navbar-toggler-icon {
-        background: none;
+        background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         color: brand-secondary;
         height: 2rem;
         position: relative;
@@ -92,7 +92,6 @@ section {
       }
         .navbar-toggler:before {
           content: "";
-          background-image: url('https://cdn-assets-cloud.frontify.com/local/frontify/eyJwYXRoIjoiXC9wdWJsaWNcL3VwbG9hZFwvc2NyZWVuc1wvMjQ5NzMwXC9jYjJlNTQwYTAyYmY1MGNhNTYzZGU0OWU4NGU2MDA3MC0xNTkyNTY3OTAxLnN2ZyJ9:frontify:tNf5VhprAVv0JaQjKn0JmG5knPCHVwJ-Rt3QpRkQ5Ac?width=2400');
           display: block;
           left: 50%;
           height: 2rem;
@@ -154,8 +153,32 @@ section {
             font-size: 1.1625rem;
             text-decoration: underline;
           }
+          .navbar-nav {
+            margin-top: 1rem;
+          }
+          .navbar-nav .nav-item {
+            font-size: 2.2rem;
+            line-height: 3.5rem;
+             border-bottom: 2px solid lightgrey;
+          }
         }
-  
+
+        a.nav-link {
+          border-top: none;
+          color: #1f6a45;
+          padding: 0.5rem 1rem;
+        }
+        a.nav-link:hover {
+            color: #1f6a45;
+          }
+        
+          a.nav-link-highlight {
+            color: #1f6a45;
+          }
+            a.nav-link:hover {
+              color: #1f6a45;
+            }
+            
   @media screen and (min-width: 768px) {
       .navbar .navbar-expand-md .navbar-nav a.nav-link {
         font-size: 1.1625rem;
@@ -186,7 +209,7 @@ section {
         
         a.nav-link {
           border-top: none;
-          color: #42383b;
+          color: #1f6a45;
           padding: 0.5rem 1rem;
         }
         a.nav-link:hover {
@@ -422,7 +445,7 @@ button {
 }
 .btn-icon-highlight:before {
   max-width: 1.6em;
-  background-image: url(../HTML/Assets/arrow_right_icon-circle-white.png);
+  background-image: url(../arrow_right_icon-circle-white.png);
   height: 125%;
   left: 89%;
   position: absolute;
@@ -635,7 +658,6 @@ footer,.footer {
             padding-bottom: 1rem;
          }
          .panel-card-product .bg-image span {
-              background-image: url('https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2FjY291bnRzXC80M1wvMTg4NjgwXC9wcm9qZWN0c1wvMjQwNDQ3XC9hc3NldHNcLzBmXC80MzY5ODE3XC82YThhYmJkZDZmMjNkZjFjMTNkMTQ2YWMzYzQ2ZTFmYi0xNTkxNzk4MDEzLnN2ZyJ9:frontify:DbP31gwqPmbWSbIsT7jw2bPgu5vviU_Xeq5bnPLUo3o?width=2400');
               background-position: center top;
               background-repeat: no-repeat;
               display:block;
